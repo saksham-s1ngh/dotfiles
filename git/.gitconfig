@@ -1,0 +1,20 @@
+[core]
+      editor = nvim
+      autocrlf = input
+      excludesfile = ~/.gitignore_global
+
+[pull]
+      rebase = false
+
+[init]
+      defaultBranch = main
+
+[alias]
+      st = status
+      co = switch
+      cb = switch -c
+      lg = log --oneline --graph --decorate --all
+
+[push]
+      autosetupremote = true
+

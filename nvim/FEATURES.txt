@@ -1,0 +1,50 @@
+Neovim setup — feature list
+(source: nvim/lua/plugins/*.lua — one file per feature)
+
+Editor core (init.lua)
+- Leader key = Space
+- 2-space indent (expandtab/tabstop/shiftwidth)
+- Relative + absolute line numbers
+- System clipboard integration
+- lazy.nvim as plugin manager (auto-bootstraps on first launch)
+
+Colorscheme
+- catppuccin.lua — Catppuccin theme
+
+Autocompletion
+- completions.lua — nvim-cmp engine, LuaSnip snippets, friendly-snippets
+  library, Tab/Shift-Tab to cycle + jump snippet stops, Enter to confirm
+
+Formatting
+- conform.lua — format-on-save. stylua (Lua), prettier (JS/TS/HTML/CSS/
+  JSON/YAML/Markdown), isort+black (Python), rustfmt (Rust), csharpier (C#)
+  <leader>gf — manual format
+
+Linting
+- nvim-lint.lua — async lint on save. eslint_d (JS/TS), ruff (Python)
+  C# diagnostics come from Roslyn itself, no separate linter
+
+LSP (code intelligence)
+- lsp.lua — Mason + mason-lspconfig, auto-installs lua_ls/html/cssls/
+  jsonls/yamlls. K = hover, gd = go to definition, <leader>gr = references,
+  <leader>d / ]d / [d = diagnostics
+- roslyn.lua — Roslyn LSP for C# (.cs files)
+
+Code actions
+- actions-preview.lua — <leader>ca opens a preview sub-window showing the
+  diff of a code action (quick fix / refactor) before it's applied
+
+File explorer
+- neo-tree.lua — <leader>e toggles the tree
+
+Fuzzy finder
+- telescope.lua — <leader>ff find files, <leader>fg live grep,
+  <leader>fb buffers, <leader>fh help tags (+ fzf-native, ui-select)
+
+Syntax + folding
+- treesitter.lua — highlighting + treesitter-based code folding for lua,
+  vim, javascript, typescript, tsx, python, rust, go, html, css, json,
+  yaml, markdown (auto-installs new languages as you open them)
+
+Status line
+- lualine.lua — statusbar, dracula theme
