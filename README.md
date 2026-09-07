@@ -33,7 +33,7 @@ git --version
 ### 2. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
+git clone https://github.com/saksham-s1ngh/dotfiles.git ~/dotfiles
 ```
 
 > If you haven't pushed to GitHub yet, copy the folder to the new machine manually and skip the clone.
